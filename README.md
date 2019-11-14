@@ -29,4 +29,15 @@ It looks like the best movies have been consistently grossing more money since 2
 
 ![Top 10 Gross All](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/top_10_gross_all.png "Top 10 Gross All")
 
-Here, we see that at the end of August, movies are less likely to do successfully. We also can see that Avengers Endgame is the most successful movie of all time, grossing $357,115,007 it's opening [weekend](https://www.boxofficemojo.com/title/tt4154796/?ref_=bo_se_r_2) (I don't know why people like this movie). 
+Here, we see that at the end of August, movies are less likely to do successfully. We also can see that Avengers Endgame is the most successful movie of all time, grossing $357,115,007 it's opening [weekend](https://www.boxofficemojo.com/title/tt4154796/?ref_=bo_se_r_2) (I don't know why people like this movie).
+
+So we know that movie theaters are making more money now than ever before. Are movies reviews correlating to the gross of the most successful films? Let's first look at how the audience and critic reviews have changed since 2000.
+
+![Tomato Score All](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/tomato_score_all.png "Tomato Score All")
+
+![Audience Score All](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/aud_score_all.png "Audience Score All")
+
+
+
+
+

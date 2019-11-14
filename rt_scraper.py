@@ -487,7 +487,7 @@ def plot_average_top10_gross():
         top10gross_avg.append(
             np.average(df["top10gross"].tolist())/1_000_000
         )
-    fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+    fig, ax = plt.subplots(1, 1, figsize=single_fig_size)
     ax.plot(range(len(top10gross_avg)), top10gross_avg, label="AVG")
     ax.xaxis.set_ticks(range(0, 20))
     ax.set_xticklabels(ax.get_xticks())
@@ -528,7 +528,7 @@ def plot_top10_gross_year(year=2000):
             "top10gross": [data["top10gross"] for data in year_data]
         }
     )
-    fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+    fig, ax = plt.subplots(1, 1, figsize=single_fig_size)
     ax.plot(df["week"].astype(int), df["top10gross"]/1_000_000)
     ax.set_xticklabels(ax.get_xticks())
     ax.set_yticklabels(ax.get_yticks())
@@ -559,7 +559,7 @@ def plot_top10_gross_all():
     with open("rt_data.json") as json_file:
         datas = json.load(json_file)
 
-    fig, ax = plt.subplots(1, 1, figsize=(10, 5))
+    fig, ax = plt.subplots(1, 1, figsize=single_fig_size)
     for year in range(2000, 2020):
         year_data = [data for data in datas if data["year"] == year]
         df = pd.DataFrame(
@@ -570,8 +570,8 @@ def plot_top10_gross_all():
         )
         ax.plot(df["week"].astype(int), df["top10gross"]/1_000_000, c=u'#1f77b4')
 
-    ax.text(17+0.75, 396469872/1_000_000, "Endgame")
-    ax.scatter(17-0.02, 396469872/1_000_000)
+    ax.text(17+0.75, 357_115_007/1_000_000, "Endgame")
+    ax.scatter(17-0.02, 357_115_007/1_000_000)
     ax.set_xticklabels(ax.get_xticks())
     ax.set_yticklabels(ax.get_yticks())
     ax.set_yticklabels(
@@ -597,6 +597,97 @@ def plot_top10_gross_all():
     plt.savefig("graphs/top_10_gross_all.png".format(year), bbox_inches="tight")
     plt.close()
 
+def average_tomato_score_all():
+    with open("rt_data.json") as json_file:
+        datas = json.load(json_file)
+    tomato_scores = []
+    for year in range(2000, 2020):
+        year_data = [data for data in datas if data["year"] == year]
+        df = pd.DataFrame(
+            {
+                "week": [data["weeknum"] for data in year_data],
+                "tomato_score": [data["tomato_score"] for data in year_data],
+                "movie_name": [data["num1release"] for data in year_data]
+            }
+        )
+        tomato_scores.append(np.average(df["tomato_score"].tolist()))
+    fig, ax = plt.subplots(1, 1, figsize=single_fig_size)
+
+    ax.plot(range(len(tomato_scores)), tomato_scores, label="AVG")
+    ax.xaxis.set_ticks(range(0, 20))
+    ax.set_xticklabels(ax.get_xticks())
+    ax.set_yticklabels(ax.get_yticks())
+    ax.set_xticklabels(
+        [
+            "'0" + item.get_text() if int(item.get_text()) < 10 
+            else "'" + item.get_text() 
+            for item in ax.get_xticklabels()
+        ]
+    )
+    ax.set_yticklabels(
+        [
+            str(int(float(item.get_text()))) + "%" 
+            for item in ax.get_yticklabels()
+        ]
+    )
+    ax.set_title("Average Yearly Tomato Scores\nof Best Weekend Films", fontsize=20)
+    ax.tick_params(axis="y", labelsize=12)
+    ax.tick_params(axis="x", labelsize=12)
+    ax.set_xlabel("Year", fontsize=15, y=1.05)
+    ax.set_ylabel("Average Tomato Scores", fontsize=15)
+    ax.spines['right'].set_visible(False)
+    ax.spines['top'].set_visible(False)
+    ax.yaxis.set_ticks_position('left')
+    ax.xaxis.set_ticks_position('bottom')
+    plt.savefig("graphs/tomato_score_all.png", bbox_inches="tight")
+    plt.close()
+
+def average_aud_score_all():
+    with open("rt_data.json") as json_file:
+        datas = json.load(json_file)
+    aud_scores = []
+    for year in range(2000, 2020):
+        year_data = [data for data in datas if data["year"] == year]
+        df = pd.DataFrame(
+            {
+                "week": [data["weeknum"] for data in year_data],
+                "aud_score": [data["aud_score"] for data in year_data],
+                "movie_name": [data["num1release"] for data in year_data]
+            }
+        )
+        aud_scores.append(np.average(df["aud_score"].tolist()))
+    fig, ax = plt.subplots(1, 1, figsize=single_fig_size)
+
+    ax.plot(range(len(aud_scores)), aud_scores, label="AVG")
+    ax.xaxis.set_ticks(range(0, 20))
+    ax.set_xticklabels(ax.get_xticks())
+    ax.set_yticklabels(ax.get_yticks())
+    ax.set_xticklabels(
+        [
+            "'0" + item.get_text() if int(item.get_text()) < 10 
+            else "'" + item.get_text() 
+            for item in ax.get_xticklabels()
+        ]
+    )
+    ax.set_yticklabels(
+        [
+            str(int(float(item.get_text()))) + "%" 
+            for item in ax.get_yticklabels()
+        ]
+    )
+    # ax.legend()
+    ax.set_title("Average Yearly Audience Scores\nof Best Weekend Films", fontsize=20)
+    ax.tick_params(axis="y", labelsize=12)
+    ax.tick_params(axis="x", labelsize=12)
+    ax.set_xlabel("Year", fontsize=15, y=1.05)
+    ax.set_ylabel("Average Tomato Scores", fontsize=15)
+    ax.spines['right'].set_visible(False)
+    ax.spines['top'].set_visible(False)
+    ax.yaxis.set_ticks_position('left')
+    ax.xaxis.set_ticks_position('bottom')
+    plt.savefig("graphs/aud_score_all.png", bbox_inches="tight")
+    plt.close()
+
 # [plot_aud_and_tomato_scores(year) for year in range(2000,2020)]
 # [plot_diff_in_scores_year(year) for year in range(2000,2020)]
 # [plot_top10_gross_year(year) for year in range(2000,2020)]
@@ -604,4 +695,6 @@ def plot_top10_gross_all():
 # plot_average_score_diff()
 # plot_top10_gross_in_decades()
 # plot_average_top10_gross()
-plot_top10_gross_all()
+# plot_top10_gross_all()
+# average_tomato_score_all()
+average_aud_score_all()
