@@ -20,6 +20,6 @@ In order to explore the data, I started with [Box Office Mojo](https://www.boxof
 
 So let's first look at how the movie industry's grossing has changed over the years.
 
-![Top 10 Gross 2000-2009](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/graphs/top_10_gross_2000-2009.png "Top 10 Gross 2000-2009")
+![Top 10 Gross 2000-2009](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/top_10_gross_2000-2009.png "Top 10 Gross 2000-2009")
 
-![Top 10 Gross 2010-2019](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/graphs/top_10_gross_2000-2009.png "Top 10 Gross 2010-2019")
+![Top 10 Gross 2010-2019](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/top_10_gross_2010-2019.png "Top 10 Gross 2010-2019")
