@@ -213,8 +213,8 @@ def plot_aud_and_tomato_scores(year=2000):
     fig, (a0, a1) = plt.subplots(2, 1, figsize=stacked_fig_size)
     a0.plot(df["week"], df["aud_score"])
     a1.plot(df["week"], df["tomato_score"])
-    a0.set_title("Audience Score", fontsize=20, y=0.95)
-    a1.set_title("Tomato Score", fontsize=20, y=0.95)
+    a0.set_title("Audience Score {}".format(year), fontsize=20, y=0.95)
+    a1.set_title("Tomato Score {}".format(year), fontsize=20, y=0.95)
 
     for ax in [a0, a1]:
         ax.spines['right'].set_visible(False)
@@ -688,13 +688,13 @@ def average_aud_score_all():
     plt.savefig("graphs/aud_score_all.png", bbox_inches="tight")
     plt.close()
 
-# [plot_aud_and_tomato_scores(year) for year in range(2000,2020)]
-# [plot_diff_in_scores_year(year) for year in range(2000,2020)]
-# [plot_top10_gross_year(year) for year in range(2000,2020)]
-# plot_diff_in_decades()
-# plot_average_score_diff()
-# plot_top10_gross_in_decades()
-# plot_average_top10_gross()
-# plot_top10_gross_all()
-# average_tomato_score_all()
+[plot_aud_and_tomato_scores(year) for year in range(2000,2020)]
+[plot_diff_in_scores_year(year) for year in range(2000,2020)]
+[plot_top10_gross_year(year) for year in range(2000,2020)]
+plot_diff_in_decades()
+plot_average_score_diff()
+plot_top10_gross_in_decades()
+plot_average_top10_gross()
+plot_top10_gross_all()
+average_tomato_score_all()
 average_aud_score_all()
