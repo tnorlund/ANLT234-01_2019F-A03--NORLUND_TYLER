@@ -51,3 +51,14 @@ Would you look at that! It looks like the audience's reviews movies differently 
 
 Here we see that 2018 was the first time the critics reviewed the highest grossing films better than the audience. Looking back at the average audience scores over the years, we can see that the audience began to positively review the best films in 2019. Audiences were poorly reviewing the highest grossing films from 2016-2018. Critics are now poorly reviewing the highest grossing films since 2017.
 
+The only way that I can explain the change in 2018 is that Rotten Tomatoes has changed. For some reason, Rotten Tomatoes has "edited" which reviews are relevant for the highest grossing films. In February 2018, Rotten Tomatoes added a new editor-in-chief, [Joel Meares](https://variety.com/2018/digital/news/rotten-tomatoes-joel-meares-editor-in-chief-1202711540/). Joel's Husband, [Kyle Griffin](https://twitter.com/kylegriffin1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) is a senior producer at MSNBC, and explains that he is "not as outlandish as [he] could be." With this out of the way, we can look at how all of Rotten Tomatoes reviews have changed since Joel took this position.
+
+![Scores 2018](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/aud_and_tomato_2018.png "Scores 2018")
+
+![Scores 2019](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/aud_and_tomato_2019.png "Scores 2019")
+
+
+
+
+
+
