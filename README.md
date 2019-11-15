@@ -31,7 +31,11 @@ It looks like the best movies have been consistently grossing more money since 2
 
 Here, we see that at the end of August, movies are less likely to do successfully. We also can see that Avengers Endgame is the most successful movie of all time, grossing $357,115,007 it's opening [weekend](https://www.boxofficemojo.com/title/tt4154796/?ref_=bo_se_r_2) (I don't know why people like this movie).
 
-Before we go any further, let's talk about the Rotten Tomatoes [scoring system]([https://www.rottentomatoes.com/about](https://www.rottentomatoes.com/about)). Rotten Tomatoes is one of the few websites that has both the audience's reviews and the critic's reviews. If the critic's consensus is more than 60% positive of the movie, the movie is considered "fresh," otherwise it is "rotten." The website does not label movies based on the audience's reviews.
+Before we go any further, let's talk about the Rotten Tomatoes [scoring system]([https://www.rottentomatoes.com/about](https://www.rottentomatoes.com/about)). Rotten Tomatoes is one of the few websites that has both the audience's reviews and the critic's reviews. If the critic's consensus is more than 60% positive of the movie, the movie is considered "fresh," otherwise it is "rotten." The website does not label movies based on the audience's reviews. I was able to scrape Rotten Tomatoes for:
+ - Tomato Scores
+ - Audience Scores
+ - The movie's synopsis
+ - Meta-data (Rating, Genre, Writer, Director, etc.)
 
 So we know that movie theaters are making more money now than ever before. Are movies reviews correlating to the gross of the most successful films? Let's first look at how the audience and critic reviews have changed since 2000.
 
@@ -45,5 +49,5 @@ Would you look at that! It looks like the audience's reviews movies differently 
 
 ![Diff in Scores 2010-2019](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/score_diff_2010-2019.png "Diff in Scores 2010-2019")
 
-
+Here we see that 2018 was the first time the critics reviewed the highest grossing films better than the audience. Looking back at the average audience scores over the years, we can see that the audience began to positively review the best films in 2019. Audiences were poorly reviewing the highest grossing films from 2016-2018. Critics are now poorly reviewing the highest grossing films since 2017.
 
