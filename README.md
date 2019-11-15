@@ -53,11 +53,11 @@ Here we see that 2018 was the first time the critics reviewed the highest grossi
 
 The only way that I can explain the change in 2018 is that Rotten Tomatoes has changed. For some reason, Rotten Tomatoes has "edited" which reviews are relevant for the highest grossing films. In February 2018, Rotten Tomatoes added a new editor-in-chief, [Joel Meares](https://variety.com/2018/digital/news/rotten-tomatoes-joel-meares-editor-in-chief-1202711540/). Joel's Husband, [Kyle Griffin](https://twitter.com/kylegriffin1?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) is a senior producer at MSNBC, and explains that he is "not as outlandish as [he] could be." With this out of the way, we can look at how all of Rotten Tomatoes reviews have changed since Joel took this position.
 
-![Scores 2018](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/aud_and_tomato_2018.png "Scores 2018")
-
 ![Scores 2019](https://github.com/tnorlund/ANLT234-01_2019F-A03--NORLUND_TYLER/blob/master/graphs/aud_and_tomato_2019.png "Scores 2019")
 
+Here we see that the audience have loved movies during the summer while the critics have poorly reviewed them. Some of these movies are "Aladdin," "Godzilla: King of the Monsters," "The Secret Life of Pets 2," and "Joker." 
 
+Has Joel's editing changed how Rotten Tomatoes reviews movies? If movies are grossing more money year-by-year and audiences have positively reviewed the highest grossing movies, why are Rotten Tomatoes's critics reviewing these movies poorly? Can we still trust the "critics" that tell us which movies to watch? 
 
 
 
